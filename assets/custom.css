@@ -1,0 +1,353 @@
+/* === SLIDER DE ANO - CRONOFOGO === */
+/* Este bloco estiliza o slider para seleção de ano */
+
+/* Linha branca (fundo) */
+.slider-ano-custom .rc-slider-rail {
+    background-color: white !important;
+    width: 4px;
+}
+
+/* Linha ativa (track) também branca para parecer contínua */
+.slider-ano-custom .rc-slider-track {
+    background-color: white !important;
+    width: 4px;
+}
+
+/* Handle (ponto de arrasto) - formato circular com borda vermelha */
+.slider-ano-custom .rc-slider-handle {
+    background-color: white !important;
+    border: 3px solid #E74C3C !important;  /* Borda vermelha */
+    box-shadow: none !important;
+    opacity: 1;
+    width: 16px;
+    height: 16px;
+    margin-left: -6px;
+    margin-top: -6px;
+}
+
+/* Remove sombra ao clicar no handle */
+.slider-ano-custom .rc-slider-handle:active {
+    box-shadow: none !important;
+}
+
+/* Estilo base para marcadores de anos no slider */
+.slider-ano-custom .rc-slider-mark-text {
+    font-size: 11px !important;
+    font-weight: normal;
+    text-align: center;
+    display: inline-block;
+    transform: translateY(5px);  /* Espaçamento acima do texto */
+    margin-bottom: 8px;          /* Espaçamento abaixo do texto */
+}
+
+/* Estilo para marcadores de anos selecionados */
+.slider-ano-custom .rc-slider-mark-text.rc-slider-mark-text-active {
+    font-size: 11px !important;
+    color: white !important;
+}
+
+/* Pontos discretos no slider */
+.slider-ano-custom .rc-slider-dot {
+    border: 2px solid white !important;
+    background-color: white !important;
+    width: 8px;
+    height: 8px;
+    margin-left: -3px;
+    margin-top: -3px;
+    box-shadow: none !important;
+}
+
+/* === CUSTOM RADIO BUTTONS (METRICS & MONTHS) === */
+/* Este bloco estiliza os botões de rádio para métricas e meses */
+
+/* Container para cada item de rádio (círculo + texto) */
+.metrica-radio-custom .form-check,
+.mes-radio-custom .form-check {
+    margin-bottom: 1px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 2px 0;
+}
+
+/* Wrapper para alinhar melhor os inputs de rádio */
+.radio-input-wrapper {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-right: 6px;
+    flex-shrink: 0;
+}
+
+/* Estilo base para os botões de rádio */
+.metrica-radio-custom .form-check-input,
+.mes-radio-custom .form-check-input {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    
+    border-radius: 50%;
+    box-sizing: border-box; 
+    
+    background-color: white !important;
+    
+    /* margin-right removido, tratado pelo .radio-input-wrapper */
+    outline: none;
+    box-shadow: none !important;
+    transition: border-color 0.2s ease-in-out, width 0.2s ease-in-out, height 0.2s ease-in-out, background-color 0.2s ease-in-out;
+
+    /* Estilo padrão para botões NÃO SELECIONADOS */
+    width: 12px;
+    height: 12px;
+    border: 1px solid #bbb !important;
+}
+
+/* O círculo do botão de rádio (repetido no código original) */
+.metrica-radio-custom .form-check-input,
+.mes-radio-custom .form-check-input {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    
+    border-radius: 50%;
+    box-sizing: border-box; 
+    
+    background-color: white !important;
+    
+    margin-right: 8px;
+    outline: none;
+    box-shadow: none !important;
+    flex-shrink: 0;
+    transition: border-color 0.2s ease-in-out, width 0.2s ease-in-out, height 0.2s ease-in-out;
+
+    /* Estilo para botões NÃO SELECIONADOS */
+    width: 12px;
+    height: 12px;
+    border: 1px solid #bbb !important;
+}
+
+/* Estilo para botões SELECIONADOS */
+.metrica-radio-custom .form-check-input:checked,
+.mes-radio-custom .form-check-input:checked {
+    width: 16px;
+    height: 16px;
+    background-color: white !important;
+    border: 3px solid #E74C3C !important;  /* Borda vermelha como no handle do slider */
+}
+
+/* Efeito hover para botões NÃO SELECIONADOS */
+.metrica-radio-custom .form-check:hover .form-check-input:not(:checked),
+.mes-radio-custom .form-check:hover .form-check-input:not(:checked) {
+    border-color: #888 !important;
+}
+
+/* Efeito hover para botões SELECIONADOS */
+.metrica-radio-custom .form-check:hover .form-check-input:checked,
+.mes-radio-custom .form-check:hover .form-check-input:checked {
+    border-color: #c0392b !important;  /* Vermelho mais escuro no hover */
+}
+
+/* Estilo para os textos das métricas */
+.metrica-radio-custom .form-check-label {
+    color: white !important; 
+    font-size: 0.85rem;
+    font-weight: normal;
+    padding-left: 0;
+}
+
+/* Texto em negrito para métrica selecionada */
+.metrica-radio-custom .form-check-input:checked + .form-check-label {
+    font-weight: bold !important;
+}
+
+/* Estilo para os textos dos meses */
+.mes-radio-custom .form-check-label {
+    color: white !important;
+    font-size: 11px;
+    font-weight: normal;
+    padding-left: 0;
+}
+
+/* Texto em negrito para mês selecionado */
+.mes-radio-custom .form-check-input:checked + .form-check-label {
+    font-weight: bold !important;
+}
+
+/* Cor personalizada para switch toggle */
+input[type="checkbox"].form-check-input:checked {
+  background-color: #b0b0b0 !important;  /* cinza claro */
+  border-color: #b0b0b0 !important;
+}
+
+/* Estilo para o fundo da página */
+body {
+    background-color: #F8F9FA;
+}
+
+/* Estilo para dropdown personalizado */
+.dash-dropdown-custom .Select-control {
+    display: flex;
+    align-items: center;
+    height: 30px;
+    padding: 0 5px;
+}
+
+/* === ESTILO PARA SCROLLBAR === */
+/* Scrollbar discreto e elegante */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.15);  /* cinza claro semi-transparente */
+  border-radius: 3px;
+  transition: background-color 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+/* Scrollbar para Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.15) transparent;
+}
+
+/* === CONTROLE SEGMENTADO === */
+/* Container para controle segmentado (grupo de botões) */
+.segmented-control-container {
+    display: flex !important;
+    flex-wrap: nowrap !important;  /* Impede que os botões quebrem em linhas */
+    width: 100%;
+    border-radius: 8px;
+    background-color: #e8e8e8;
+    border: 1px solid #bbb;
+    overflow: hidden;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.05);
+}
+
+/* Botões dentro do controle segmentado */
+.segmented-control-container .btn {
+    border: none;
+    border-radius: 0 !important;
+    background-color: transparent;
+    font-size: 0.75rem;
+    color: #444;
+    padding: 5px 12px; 
+    margin: 0;
+    box-shadow: none !important;
+    transition: background-color 0.2s ease, color 0.2s ease;
+
+    flex-grow: 1;  /* Faz botões crescerem igualmente */
+    flex-basis: 0;
+    text-align: center; 
+    white-space: normal;  /* Permite quebra de texto */
+    
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+}
+
+/* Estilo para botões ativos (selecionados) */
+.segmented-control-container .btn.active,
+.segmented-control-container .btn:active,
+.segmented-control-container .btn:focus {
+    background-color: white !important;
+    color: #222 !important;
+    font-weight: 600;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+    z-index: 1;
+}
+
+/* Efeito hover para botões */
+.segmented-control-container .btn:hover {
+    background-color: #f1f1f1;
+    color: #222;
+}
+
+/* === SLIDER DE DIA - MAPA METEOROLÓGICO === */
+/* Estilização específica para o slider de dias */
+.meteo-day-slider-custom .rc-slider-rail {
+    background-color: #e9e9e9 !important;
+    height: 6px !important;
+}
+
+.meteo-day-slider-custom .rc-slider-track {
+    background-color: #E74C3C !important;  /* Trilha em vermelho */
+    height: 6px !important;
+}
+
+.meteo-day-slider-custom .rc-slider-handle {
+    background-color: #E74C3C !important;
+    border: 2px solid white !important;
+    box-shadow: none !important;
+    opacity: 1;
+    width: 18px;
+    height: 18px;
+    margin-left: -8px;
+    margin-top: -6px;
+}
+
+.meteo-day-slider-custom .rc-slider-handle:active {
+    box-shadow: 0 0 5px #E74C3C !important;  /* Efeito ao clicar */
+}
+
+.meteo-day-slider-custom .rc-slider-mark-text {
+    color: #555 !important;
+    font-size: 10px !important;
+}
+
+/* === SLIDER DE VENTO === */
+/* Slider delicado para controle de vento */
+.slider-vento-custom .rc-slider-rail {
+    background-color: #e0e0e0 !important;  /* Cinza claro para parte inativa */
+    height: 4px !important;
+    border-radius: 2px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.slider-vento-custom .rc-slider-track {
+    background-color: #999999 !important;  /* Cinza médio para parte ativa */
+    height: 4px !important;
+    border-radius: 2px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.slider-vento-custom .rc-slider-handle {
+    background-color: white !important;
+    border: 2px solid #999999 !important;  /* Borda da mesma cor da trilha */
+    width: 16px;
+    height: 16px;
+    margin-top: -8px;
+    box-shadow: none !important;
+    border-radius: 50%;
+}
+
+.slider-vento-custom .rc-slider-dot {
+    background-color: #bbbbbb !important;
+    border: none !important;
+    width: 1px !important;
+    height: 6px !important;
+    margin-left: -0.5px;
+    margin-top: -1px;
+    border-radius: 0.5px;
+    box-shadow: none !important;
+}
+
+.slider-vento-custom .rc-slider-mark-text {
+    font-size: 11px;
+    color: #2C3E50;
+    margin-top: 6px;
+}
