@@ -1,7 +1,7 @@
-# 🔥 Cronofogo: Análise e Previsão de Incêndios em Portugal
+# Cronofogo: Wildfire Analysis and Prediction Dashboard
 
 <p align="center">
-  <img src="https://github.com/catarinafelixcr/cronofogo/blob/main/apresentacao.gif" alt="Demonstração do Dashboard Cronofogo"/>
+  <img src="https://github.com/catarinafelixcr/cronofogo/blob/main/apresentacao.gif" alt="Demonstração do Dashboard Cronofogo" width="600"/>
 </p>
 
 ## Project Goal
