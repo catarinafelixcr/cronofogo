@@ -1,10 +1,10 @@
-# Cronofogo: Wildfire Analysis and Prediction Dashboard
+# Cronofogo: Wildfire analysis and prediction dashboard
 
 <p align="center">
   <img src="https://github.com/catarinafelixcr/cronofogo/blob/main/apresentacao.gif" alt="Demonstração do Dashboard Cronofogo" width="600"/>
 </p>
 
-## Project Goal
+## Project goal
 
 Portugal faces the annual challenge of wildfires, a problem with severe environmental and economic impacts. This project was developed to apply data science techniques to better understand this phenomenon.
 
@@ -12,15 +12,15 @@ Cronofogo is an application that not only explores historical wildfire data but 
 
 ---
 
-## Key Features
+## Features
 
-*   **Interactive Dashboard:** A user-friendly interface built with Plotly Dash, allowing dynamic data exploration through filters for year, district, and fire cause.
-*   **Predictive Model:** Implementation of a Random Forest Regressor to forecast the total burned area based on temporal and geographic features.
-*   **In-depth EDA:** A thorough exploratory data analysis of seasonal trends, common causes, and the geographical distribution of fires.
-*   **Geospatial Visualizations:** Interactive maps showing the location and scale of fires, making it easy to identify critical areas.
+*   A user-friendly interface built with Plotly Dash, allowing **dynamic data exploration** through **filters** for year, district, and fire cause.
+*   Implementation of a Random Forest Regressor to **forecast** the total burned area based on temporal and geographic features.
+*   A thorough **exploratory data analysis** of seasonal trends, common causes, and the geographical distribution of fires.
+*   Interactive maps showing the location and scale of fires, making it easy to identify critical areas.
 ---
 
-## Getting Started
+## Getting started
 
 To run this project locally, please follow the steps below:
 
